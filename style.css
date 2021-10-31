@@ -92,7 +92,6 @@ body {
   height: 3px;
   left: 0px;
   top: 0px;
-
   background: #ff7500;
 }
 
@@ -115,14 +114,153 @@ body {
   height: 96px;
   left: 0px;
   top: 163px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.orange-line {
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  left: 170px;
+  top: 794px;
+  background: #ff7500;
+}
+
+.feature {
+  width: 340px;
+}
+
+.features-heading {
+  width: 435px;
+  height: 172px;
+  left: 170px;
+  top: 821px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.feature-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 117, 0, 0.2);
+}
+
+.feature-title {
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.feature-info {
+  width: 314px;
+  height: 72px;
+  left: 0px;
+  top: 41px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-
   letter-spacing: 0.5px;
+  color: #000000;
+}
 
+.promo {
+  width: 1100px;
+  height: 419px;
+  left: 170px;
+  top: 1640px;
+  background: #252420;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.promo-content {
+  width: 440px;
+}
+
+.promo-heading {
+  width: 373px;
+  height: 96px;
+  left: 234px;
+  top: 1704px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
   color: #ffffff;
+}
+
+.promo-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.promo-highlight {
+  color: #ff7500;
+}
+
+.promo-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Roboto Condensed";
+  position: absolute;
+  width: 152px;
+  height: 39px;
+  left: 234px;
+  top: 1956px;
+  background: #ff7500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.promo-img {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  left: 766px;
+  top: 1555px;
+
+  background: url(.png);
+  border-radius: 12px;
+}
+
+.site-footer {
+  position: absolute;
+  width: 1440px;
+  height: 507px;
+  left: 0px;
+  top: 2219px;
+  background: #f8f8f8;
+}
+
+.site-footer-divider {
+  width: 1100px;
+  height: 2px;
+  left: 170px;
+  top: 2375px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background: rgba(37, 36, 32, 0.5);
 }

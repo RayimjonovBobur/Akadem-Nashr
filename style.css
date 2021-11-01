@@ -2,29 +2,45 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5;
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 * {
   font-family: "Roboto Condensed", sans-serif;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
+/* Site header */
 .site-header {
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
+}
+
+/*Site nav  */
+.sitenav-list {
+  display: flex;
+  list-style: none;
 }
 
 .sitenav-link {
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
-  letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
 }
 
+/* Main link  */
 .main-link {
   font-size: 13px;
   line-height: 15px;
@@ -61,14 +77,18 @@ body {
   color: #ffffff;
 }
 
+/* Hero */
+
 .hero {
   width: 1440px;
   height: 488px;
   left: -217px;
   top: 97px;
-
+  display: flex;
   background: #252420;
   color: #fff;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-content {
@@ -90,9 +110,7 @@ body {
 .hero-line {
   width: 80px;
   height: 3px;
-  left: 0px;
-  top: 0px;
-  background: #ff7500;
+  background-color: #ff7500;
 }
 
 .hero-heading {
@@ -100,26 +118,11 @@ body {
   height: 96px;
   left: 0px;
   top: 43px;
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 120%;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-}
-
-.hero-text {
-  width: 387px;
-  height: 96px;
-  left: 0px;
-  top: 163px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.5px;
   color: #ffffff;
 }
 
@@ -132,16 +135,13 @@ body {
   background: #ff7500;
 }
 
-.feature {
-  width: 340px;
-}
+/* Features */
 
 .features-heading {
   width: 435px;
   height: 172px;
   left: 170px;
   top: 821px;
-
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: bold;
@@ -149,6 +149,18 @@ body {
   line-height: 120%;
   letter-spacing: 0.5px;
   color: #000000;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* Feature */
+
+.feature {
+  width: 340px;
 }
 
 .feature-icon-wrapper {
@@ -178,14 +190,14 @@ body {
   color: #000000;
 }
 
+/* Promo */
+
 .promo {
-  width: 1100px;
-  height: 419px;
-  left: 170px;
-  top: 1640px;
   background: #252420;
-  border-radius: 12px;
-  color: #fff;
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .promo-content {
@@ -216,51 +228,60 @@ body {
 }
 
 .promo-btn {
+  background: #ff7500;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  font-family: "Roboto Condensed";
-  position: absolute;
-  width: 152px;
-  height: 39px;
-  left: 234px;
-  top: 1956px;
-  background: #ff7500;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
 }
 
 .promo-img {
-  position: absolute;
   width: 440px;
   height: 440px;
-  left: 766px;
-  top: 1555px;
-
-  background: url(.png);
-  border-radius: 12px;
+  object-fit: cover;
 }
 
+/* Site Footer */
+
 .site-footer {
-  position: absolute;
-  width: 1440px;
-  height: 507px;
-  left: 0px;
-  top: 2219px;
   background: #f8f8f8;
 }
 
-.site-footer-divider {
-  width: 1100px;
-  height: 2px;
-  left: 170px;
-  top: 2375px;
-  justify-content: center;
+.site-footer-top {
+  display: flex;
   align-items: center;
-  text-align: center;
-  margin: auto;
+  justify-content: space-between;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer-divider {
+  height: 2px;
   background: rgba(37, 36, 32, 0.5);
+}
+
+.site-footer-bottom {
+  display: flex;
+}
+
+.site-footer-links {
+  width: 224px;
+  line-height: 19px;
+}
+
+.site-footer-links a {
+  text-decoration: none;
+  color: #252420;
 }
